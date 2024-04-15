@@ -1,0 +1,11 @@
+package com.salesianos.dam.ejemplocontrolador;
+
+import lombok.AllArgsConstructor;
+
+@Data @NoArgsConstructor @AllArgsConstructor
+public class Persona {
+	
+	private String nombre;
+	private String apellidos;
+
+}

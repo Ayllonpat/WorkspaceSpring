@@ -1,0 +1,18 @@
+package com.salesianos.dam.ejemplocontrolador;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class ControladorSaludo {
+	
+	@GetMapping({"/","welcome"})
+	public String welcome(String nombre, Model model) {
+		
+		model.addAttribute("nombre", nombre); //entre comillas va el nombre de la variable, el valor es sin comillas
+		return "index";
+		
+	}
+
+}

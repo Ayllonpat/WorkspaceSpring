@@ -1,0 +1,6 @@
+package com.salesianos.dam.ejemplocontrolador;
+
+@Controller
+public class ControladorSaludo {
+
+}
