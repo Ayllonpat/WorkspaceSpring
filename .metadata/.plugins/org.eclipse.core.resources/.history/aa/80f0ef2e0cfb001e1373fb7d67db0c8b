@@ -1,8 +1,0 @@
-package com.salesianos.dam.ejemplocontrolador;
-
-public class Persona {
-	
-	private String nombre;
-	private String apellidos;
-
-}
