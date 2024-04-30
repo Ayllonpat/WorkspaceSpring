@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,
+		shrink-to-fit=no">
+		<title>Hello, world!</title>
+	</head>
+	<body>
+		<h1>Bienvenido</h1>
+		<form method="post" action="addProducto" th:object="$(productoForm)">
+			<table>
+				<tr>
+					<td><label for="nombre">Nombre</td>
+						<td><input type "text" th:field="*{name}"></td>
+					</tr>
+				<tr>
+					<td><label for="nombre">Descripcion</td>
+					<td><input type "text" th:field="*{description}"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Precio</td>
+					<td><input type "email" th:field="*{price}"></td>
+				</tr>
+				<tr>
+					<td><input type "submit" value="Submit"></td>
+				</tr>				
+			</table>
+		</form>
+	</body>
+</html>
